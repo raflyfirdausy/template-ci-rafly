@@ -69,7 +69,7 @@
  **/
 
 //! https://github.com/avenirer/CodeIgniter-MY_Model
-class Custom_model extends CI_MODEL
+class Custom_model extends CI_Model
 {
 
     /**
