@@ -1192,7 +1192,8 @@ class Custom_model extends CI_MODEL
                                 if ($option == 'has_many_pivot') {
                                     $pivot_local_key = $this->table . '_' . $this->primary_key;
                                     $pivot_foreign_key = $foreign_table . '_' . $foreign_key;
-                                    $get_relate = (isset($relation[3]) && ($relation[3] === TRUE())) ? TRUE : FALSE;
+                                    // $get_relate = (isset($relation[3]) && ($relation[3] === TRUE())) ? TRUE : FALSE; //coment by RAFLY
+                                    $get_relate = (isset($relation[3]) && ($relation[3])) ? TRUE : FALSE;
                                 }
                             }
                         }
